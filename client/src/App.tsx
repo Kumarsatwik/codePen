@@ -1,11 +1,22 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Button } from "./components/ui/button";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Compile from "./pages/Compiler";
+import NotFound from "./pages/NotFound";
+import { ThemeProvider } from "./components/ui/theme-provider";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello</h1>
-      <Button variant="link">Button</Button>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/compiler" element={<Compile />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </ThemeProvider>
     </>
   );
 }
