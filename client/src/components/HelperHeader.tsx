@@ -7,18 +7,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   CompilerSliceStateType,
   updateCurrentLanguage,
 } from "@/redux/slices/compilerSlice";
-import { RootState } from "@/redux/store";
 
 export default function HelperHeader() {
   const dispatch = useDispatch();
-  const currentLanguage = useSelector(
-    (state: RootState) => state.compilerSlice.currentLanguage
-  );
 
   return (
     <div className="__helper_header h-[50px] bg-black text-white p-2 flex justify-between items-center">
