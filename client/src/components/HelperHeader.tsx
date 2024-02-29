@@ -38,7 +38,7 @@ export default function HelperHeader() {
     (state: RootState) => state.compilerSlice.fullCode
   );
 
-  const serverUrl = process.env.VITE_SERVER_URL;
+  const serverUrl = import.meta.env.VITE_SERVER_URL;
 
   const { urlId } = useParams();
   useEffect(() => {

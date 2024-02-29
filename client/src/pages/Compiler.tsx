@@ -18,7 +18,7 @@ import toast from "react-hot-toast";
 const Compile = () => {
   const { urlId } = useParams();
   const dispatch = useDispatch();
-  const serverUrl = process.env.VITE_SERVER_URL;
+  const serverUrl = import.meta.env.VITE_SERVER_URL;
   const loadCode = useCallback(async () => {
     try {
       const response = await axios.post(`${serverUrl}/compiler/load`, {
