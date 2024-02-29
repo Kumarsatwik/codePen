@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Compile from "./pages/Compiler";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/ui/theme-provider";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -14,9 +15,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/compiler" element={<Compile />} />
+          <Route path="/compiler/:urlId" element={<Compile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ThemeProvider>
+      <Toaster />
     </>
   );
 }

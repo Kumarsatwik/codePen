@@ -10,7 +10,7 @@ const Header = () => {
       </Link>
       <ul className=" flex gap-2">
         <li>
-          <Link to="/complier">
+          <Link to="/compiler">
             <Button variant="secondary">Compiler</Button>
           </Link>
         </li>
