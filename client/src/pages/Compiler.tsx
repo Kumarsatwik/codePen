@@ -34,7 +34,7 @@ const Compile = () => {
       }
       handleError(error);
     }
-  }, [urlId, dispatch]);
+  }, [urlId, dispatch, serverUrl]);
 
   useEffect(() => {
     if (urlId) {

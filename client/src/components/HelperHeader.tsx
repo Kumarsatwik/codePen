@@ -47,7 +47,7 @@ export default function HelperHeader() {
     } else {
       setShareBtn(false);
     }
-  }, []);
+  }, [urlId]);
 
   const handleSaveCode = async () => {
     setSaveLoading(true);

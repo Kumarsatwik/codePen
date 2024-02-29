@@ -18,9 +18,12 @@ export default function CodeEditor() {
 
   const dispatch = useDispatch();
 
-  const onChange = React.useCallback((value: string) => {
-    dispatch(updateCodeValue(value));
-  }, []);
+  const onChange = React.useCallback(
+    (value: string) => {
+      dispatch(updateCodeValue(value));
+    },
+    [dispatch]
+  );
 
   return (
     <CodeMirror
