@@ -16,6 +16,7 @@ This is a CodePen clone project built using React, Redux, Tailwind CSS, Node.js,
   - React: A JavaScript library for building user interfaces.
   - Redux: A predictable state container for JavaScript apps.
   - Tailwind CSS: A utility-first CSS framework for quickly building custom designs.
+  - Shadcn : A UI component library for building designs.
 
 - **Backend**:
   - Node.js: A JavaScript runtime environment that executes JavaScript code outside a web browser.
