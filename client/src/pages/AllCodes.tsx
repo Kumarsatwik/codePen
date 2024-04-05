@@ -11,7 +11,9 @@ const AllCodes: React.FunctionComponent<IAllCodesProps> = () => {
     <>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-3 p-3">
         {allCodes?.map((codeItem) => {
-          return <CodeItem key={codeItem._id} data={codeItem} />;
+          return (
+            <CodeItem deleteBtn={false} key={codeItem._id} data={codeItem} />
+          );
         })}
       </div>
     </>

@@ -62,13 +62,9 @@ export default function HelperHeader() {
   }, [urlId]);
 
   const handleSaveCode = async () => {
+    const body = { fullCode: fullCode, title: postTitle };
     try {
-      // const response = await axios.post(`${serverUrl}/compiler/save`, {
-      //   fullCode: fullCode,
-      // });
-      const body = { fullCode: fullCode, title: postTitle };
       const response = await saveCode(body).unwrap();
-      console.log(response);
       navigate(`/compiler/${response.url}`, { replace: true });
     } catch (error) {
       handleError(error);

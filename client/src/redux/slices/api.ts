@@ -1,5 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { CompilerSliceStateType } from "./compilerSlice";
+import {
+  codeType,
+  loginCredentialType,
+  signupCredentialType,
+  userInfoType,
+} from "@/vite-env";
 export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: import.meta.env.VITE_SERVER_URL,

@@ -13,6 +13,7 @@ import {
 
 import { useDeleteCodeMutation } from "@/redux/slices/api";
 import { handleError } from "./utils/handleError";
+import { codeType } from "@/vite-env";
 
 export default function CodeItem({
   data,
