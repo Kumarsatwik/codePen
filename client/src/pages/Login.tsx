@@ -45,6 +45,7 @@ const Login: React.FunctionComponent<ILoginProps> = () => {
       dispatch(updateIsLoggedIn(true));
       navigate("/");
     } catch (error) {
+      console.log(error);
       handleError(error);
     }
   }
