@@ -1,4 +1,4 @@
-## CodeEditor Project
+## CodePen Project
 
 This is a CodePen clone project built using React, Redux, Tailwind CSS, Node.js, and MongoDB. It allows users to write HTML, CSS, and JavaScript code, save their code snippets, share them with others, and login to access additional features.
 
